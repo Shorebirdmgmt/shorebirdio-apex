@@ -6,13 +6,13 @@ import {
 import { Section } from './ui'
 
 const modules = [
-  { icon: Users, label: 'Clients', color: 'from-blue-500 to-blue-600' },
-  { icon: FolderKanban, label: 'Projects', color: 'from-purple-500 to-purple-600' },
+  { icon: Users, label: 'Customers', color: 'from-blue-500 to-blue-600' },
+  { icon: FolderKanban, label: 'Jobs', color: 'from-purple-500 to-purple-600' },
   { icon: Mail, label: 'Inbox', color: 'from-green-500 to-green-600' },
-  { icon: Calendar, label: 'Calendar', color: 'from-orange-500 to-orange-600' },
+  { icon: Calendar, label: 'Schedule', color: 'from-orange-500 to-orange-600' },
   { icon: MessageSquare, label: 'Chat', color: 'from-pink-500 to-pink-600' },
-  { icon: BarChart3, label: 'Marketing', color: 'from-cyan-500 to-cyan-600' },
-  { icon: DollarSign, label: 'Finance', color: 'from-emerald-500 to-emerald-600' },
+  { icon: BarChart3, label: 'Pipeline', color: 'from-cyan-500 to-cyan-600' },
+  { icon: DollarSign, label: 'Invoicing', color: 'from-emerald-500 to-emerald-600' },
   { icon: Zap, label: 'Automation', color: 'from-amber-500 to-amber-600' },
 ]
 
@@ -33,7 +33,7 @@ export function Solution() {
             </span>
           </h2>
           <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
-            Shorebird brings all your agency operations into a single, unified platform — 
+            Shorebird brings all your business operations into a single, unified platform — 
             custom-built for how you work.
           </p>
         </motion.div>
@@ -118,4 +118,3 @@ export function Solution() {
     </Section>
   )
 }
-

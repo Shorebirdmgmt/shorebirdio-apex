@@ -23,14 +23,16 @@ export function Footer({ resolvedTheme }: FooterProps) {
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <img 
-              src={resolvedTheme === 'dark' 
-                ? '/shorebird-logo-vectorize-bg.svg' 
-                : '/shorebird-logo-vectorize-bg.svg'
-              }
-              alt="Shorebird"
-              className="h-8"
-            />
+            <div className={resolvedTheme === 'dark' ? 'rounded-full p-1.5 bg-white/10' : ''}>
+              <img 
+                src={resolvedTheme === 'dark' 
+                  ? '/shorebird-logo-vectorize-bg.svg' 
+                  : '/shorebird-logo-vectorize-bg.svg'
+                }
+                alt="Shorebird"
+                className={`h-8 ${resolvedTheme === 'dark' ? 'rounded-full' : ''}`}
+              />
+            </div>
           </div>
           
           {/* Links */}

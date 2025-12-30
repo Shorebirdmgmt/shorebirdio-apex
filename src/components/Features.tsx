@@ -8,43 +8,43 @@ import { Section, GlassCard } from './ui'
 const features = [
   {
     icon: Users,
-    title: 'Client Management',
-    description: 'Track all clients, contacts, and company relationships in one central hub.',
+    title: 'Customer Management',
+    description: 'Track all customers, properties, job history, and contact info in one central hub.',
   },
   {
     icon: FolderKanban,
-    title: 'Project Tracking',
-    description: 'Deliverables, tasks, deadlines — all organized and visible at a glance.',
+    title: 'Job Tracking',
+    description: 'Estimates, work orders, tasks, and deadlines — all organized and visible at a glance.',
   },
   {
     icon: Mail,
     title: 'Unified Inbox',
-    description: 'Gmail integration with team visibility. Never miss an important email.',
+    description: 'Gmail integration with team visibility. Never miss an important message from a customer.',
   },
   {
     icon: Calendar,
-    title: 'Smart Calendar',
-    description: 'Sync with Google Calendar and link events directly to projects.',
+    title: 'Smart Scheduling',
+    description: 'Sync with Google Calendar and schedule crews directly to jobs.',
   },
   {
     icon: MessageSquare,
     title: 'Team Messenger',
-    description: 'Internal chat tied to your work — context always at hand.',
+    description: 'Internal chat tied to jobs — keep your crew in the loop without endless texts.',
   },
   {
     icon: BarChart3,
-    title: 'Marketing Hub',
-    description: 'Campaign tracking, lead management, and pipeline visibility.',
+    title: 'Sales Pipeline',
+    description: 'Lead tracking, estimate follow-ups, and pipeline visibility to close more deals.',
   },
   {
     icon: DollarSign,
-    title: 'Financial Dashboard',
-    description: 'Revenue tracking, invoicing, and expenses — all in one view.',
+    title: 'Invoicing & Payments',
+    description: 'Send invoices, track payments, and manage expenses — all in one view.',
   },
   {
     icon: Zap,
     title: 'Custom Automation',
-    description: 'Workflows tailored to your process, eliminating repetitive tasks.',
+    description: 'Workflows tailored to your process — automatic reminders, follow-ups, and more.',
   },
 ]
 
@@ -62,7 +62,7 @@ export function Features() {
           Everything You Need, Nothing You Don't
         </h2>
         <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
-          A complete operating system built specifically for agencies.
+          A complete operating system built for contractors, trades, and service businesses.
         </p>
       </motion.div>
       
@@ -92,4 +92,3 @@ export function Features() {
     </Section>
   )
 }
-

@@ -6,22 +6,22 @@ const painPoints = [
   {
     icon: Unplug,
     title: "Your tools don't talk to each other",
-    description: "CRM, project management, invoicing, calendar — all in separate silos. Data gets lost in the gaps.",
+    description: "Estimates in one app, scheduling in another, invoicing somewhere else. Customer info scattered across texts, emails, and sticky notes.",
   },
   {
     icon: RefreshCw,
-    title: "You're drowning in manual processes",
-    description: "Copy-pasting between systems, sending manual reminders, updating spreadsheets by hand.",
+    title: "You're drowning in paperwork and follow-ups",
+    description: "Chasing down payments, manually sending reminders, updating spreadsheets between jobs. Hours lost every week.",
   },
   {
     icon: TrendingDown,
-    title: "Revenue is slipping through the cracks",
-    description: "Missed deadlines, forgotten invoices, dropped leads. Money left on the table every month.",
+    title: "Jobs and revenue slip through the cracks",
+    description: "Missed follow-ups, forgotten estimates, unbilled work. Money left on the table every month.",
   },
   {
     icon: Eye,
     title: "You can't see your business at a glance",
-    description: "No single source of truth. You're always digging through tools to find answers.",
+    description: "No single source of truth. You're always digging through apps and messages to find answers.",
   },
 ]
 
@@ -39,7 +39,7 @@ export function PainPoints() {
           Sound Familiar?
         </h2>
         <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
-          If you're running an agency, you've probably felt these frustrations.
+          If you're running a contracting or service business, you've probably felt these frustrations.
         </p>
       </motion.div>
       
@@ -73,4 +73,3 @@ export function PainPoints() {
     </Section>
   )
 }
-

@@ -7,7 +7,7 @@ const steps = [
     icon: Phone,
     number: '01',
     title: 'Discovery Call',
-    description: "We learn your agency's unique processes, pain points, and goals.",
+    description: "We learn your business's unique processes, pain points, and goals.",
   },
   {
     icon: Wrench,
@@ -25,13 +25,13 @@ const steps = [
     icon: GraduationCap,
     number: '04',
     title: 'Team Training',
-    description: 'We train your team to maximize value and ensure confident adoption.',
+    description: 'We train you and your team to maximize value and ensure confident adoption.',
   },
   {
     icon: HeartHandshake,
     number: '05',
     title: 'Ongoing Support',
-    description: 'We maintain and evolve your system as your agency grows.',
+    description: 'We maintain and evolve your system as your business grows.',
   },
 ]
 
@@ -49,7 +49,7 @@ export function HowItWorks() {
           How It Works
         </h2>
         <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
-          A white-glove experience from start to finish. You focus on your clients — we handle the rest.
+          A white-glove experience from start to finish. You focus on your customers — we handle the rest.
         </p>
       </motion.div>
       
@@ -110,4 +110,3 @@ export function HowItWorks() {
     </Section>
   )
 }
-

@@ -10,7 +10,7 @@ const faqs = [
   },
   {
     question: 'Do I need technical knowledge?',
-    answer: "None at all. We handle all technical setup, configuration, and integration. You'll receive comprehensive training so your team can use the system confidently from day one.",
+    answer: "None at all. We handle all technical setup, configuration, and integration. You'll receive comprehensive training so you and your team can use the system confidently from day one.",
   },
   {
     question: 'What integrations are included?',
@@ -18,15 +18,15 @@ const faqs = [
   },
   {
     question: 'How is the system customized?',
-    answer: "We configure everything to match your agency's specific processes, terminology, and workflow. This isn't a one-size-fits-all solution — it's built around how you actually work.",
+    answer: "We configure everything to match your business's specific processes, terminology, and workflow. This isn't a one-size-fits-all solution — it's built around how you actually work.",
   },
   {
     question: 'What ongoing support is included?',
-    answer: 'Dedicated support, regular check-ins, and continuous improvements based on your feedback. As your agency evolves, your Shorebird system evolves with you.',
+    answer: 'Dedicated support, regular check-ins, and continuous improvements based on your feedback. As your business evolves, your Shorebird system evolves with you.',
   },
   {
     question: 'Can I see a demo?',
-    answer: 'Absolutely! Book a discovery call and we\'ll walk you through everything. We\'ll show you exactly how Shorebird would work for your specific agency setup.',
+    answer: 'Absolutely! Book a discovery call and we\'ll walk you through everything. We\'ll show you exactly how Shorebird would work for your specific business setup.',
   },
 ]
 
@@ -118,4 +118,3 @@ export function FAQ() {
     </Section>
   )
 }
-

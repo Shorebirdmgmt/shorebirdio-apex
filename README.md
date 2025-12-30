@@ -1,6 +1,6 @@
 # Shorebird Landing Page
 
-A modern, high-converting B2B SaaS landing page for **Shorebird Management** — a done-for-you agency management operating system.
+A modern, high-converting B2B SaaS landing page for **Shorebird Management** — a done-for-you business management operating system for contractors, trades, and service businesses.
 
 ![Shorebird](public/shorebird-logo-vectorize.svg)
 
@@ -13,6 +13,14 @@ This landing page serves as the marketing front-door for Shorebird Management, d
 - **Conversion Optimization** — Strategic CTAs throughout the page
 - **Client Access** — Workspace lookup for existing customers
 
+### Target Audience
+
+- **Contractors** — General contractors, subcontractors, construction
+- **Trades** — HVAC, plumbing, electrical, roofing
+- **Landscaping** — Lawn care, hardscaping, tree services
+- **Service Businesses** — Cleaning, pest control, property maintenance
+- **And more** — Any service business juggling jobs, customers, and crews
+
 ## ✨ Features
 
 ### Design
@@ -24,7 +32,7 @@ This landing page serves as the marketing front-door for Shorebird Management, d
 
 ### Sections
 1. **Hero** — Animated gradient background with compelling headline
-2. **Pain Points** — Resonates with prospect frustrations
+2. **Pain Points** — Resonates with contractor/business frustrations
 3. **Solution Overview** — Hub diagram showing unified platform
 4. **Features Grid** — 8 key capabilities with icons
 5. **How It Works** — 5-step implementation timeline
@@ -211,4 +219,4 @@ For questions or support, contact [hello@shorebirdmanagement.com](mailto:hello@s
 
 ---
 
-Built with ❤️ for modern agencies
+Built with ❤️ for contractors, trades, and service businesses

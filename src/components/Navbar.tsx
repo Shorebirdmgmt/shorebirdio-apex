@@ -16,43 +16,54 @@ export function Navbar({ theme, setTheme, resolvedTheme, onBookCall }: NavbarPro
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   
   const navLinks = [
-    { href: '#features', label: 'Features' },
-    { href: '#how-it-works', label: 'How It Works' },
-    { href: '#faq', label: 'FAQ' },
-    { href: '#lookup', label: 'Client Login' },
+    { id: 'features', label: 'Features' },
+    { id: 'how-it-works', label: 'How It Works' },
+    { id: 'faq', label: 'FAQ' },
+    { id: 'lookup', label: 'Client Login' },
   ]
+  
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id)
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
   
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 glass">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
-          {/* Logo */}
-          <a href="/" className="flex items-center gap-3">
-            <img 
-              src={resolvedTheme === 'dark' 
-                ? '/shorebird-logo-vectorize-bg.svg' 
-                : '/shorebird-logo-vectorize.svg'
-              }
-              alt="Shorebird"
-              className="h-9 md:h-10"
-            />
-          </a>
+          {/* Logo - flex-1 to balance with right side */}
+          <div className="flex-1 flex items-center justify-start">
+            <a href="/" className="flex items-center gap-3">
+              <div className={resolvedTheme === 'dark' ? 'rounded-full p-1.5 bg-white/10' : ''}>
+                <img 
+                  src={resolvedTheme === 'dark' 
+                    ? '/shorebird-logo-vectorize-bg.svg' 
+                    : '/shorebird-logo-vectorize.svg'
+                  }
+                  alt="Shorebird"
+                  className={`h-9 md:h-10 ${resolvedTheme === 'dark' ? 'rounded-full' : ''}`}
+                />
+              </div>
+            </a>
+          </div>
           
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          {/* Desktop Navigation - Centered */}
+          <div className="hidden md:flex items-center justify-center gap-8">
             {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
+              <button
+                key={link.id}
+                onClick={() => scrollToSection(link.id)}
                 className="text-slate-600 hover:text-primary-600 dark:text-slate-300 dark:hover:text-primary-400 font-medium transition-colors"
               >
                 {link.label}
-              </a>
+              </button>
             ))}
           </div>
           
-          {/* Desktop Actions */}
-          <div className="hidden md:flex items-center gap-4">
+          {/* Desktop Actions - flex-1 to balance with left side */}
+          <div className="flex-1 hidden md:flex items-center justify-end gap-4">
             <ThemeToggle theme={theme} setTheme={setTheme} />
             <Button onClick={onBookCall} size="sm">
               Book a Call
@@ -74,14 +85,13 @@ export function Navbar({ theme, setTheme, resolvedTheme, onBookCall }: NavbarPro
         <div className="md:hidden glass border-t border-white/20 dark:border-white/10">
           <div className="px-4 py-6 space-y-4">
             {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="block py-2 text-slate-600 hover:text-primary-600 dark:text-slate-300 dark:hover:text-primary-400 font-medium"
-                onClick={() => setMobileMenuOpen(false)}
+              <button
+                key={link.id}
+                onClick={() => { scrollToSection(link.id); setMobileMenuOpen(false) }}
+                className="block py-2 text-slate-600 hover:text-primary-600 dark:text-slate-300 dark:hover:text-primary-400 font-medium text-left w-full"
               >
                 {link.label}
-              </a>
+              </button>
             ))}
             <div className="pt-4 flex items-center justify-between">
               <ThemeToggle theme={theme} setTheme={setTheme} />

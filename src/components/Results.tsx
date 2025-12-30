@@ -8,20 +8,20 @@ const results = [
     metric: '10+',
     unit: 'hours/week',
     label: 'Saved on admin',
-    description: 'Automation handles the repetitive work so your team can focus on clients.',
+    description: 'Automation handles the repetitive work so you can focus on jobs and customers.',
   },
   {
     icon: Eye,
     metric: '100%',
     unit: 'visibility',
-    label: 'Project status',
-    description: 'Always know exactly where every project stands at a glance.',
+    label: 'Job status',
+    description: 'Always know exactly where every job stands at a glance.',
   },
   {
     icon: Receipt,
     metric: 'Zero',
     unit: 'missed',
-    label: 'Invoices or deadlines',
+    label: 'Invoices or follow-ups',
     description: 'Automated reminders and tracking ensure nothing falls through the cracks.',
   },
   {
@@ -47,7 +47,7 @@ export function Results() {
           What You'll Gain
         </h2>
         <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
-          Real results from agencies running on Shorebird.
+          Real results from businesses running on Shorebird.
         </p>
       </motion.div>
       
@@ -85,4 +85,3 @@ export function Results() {
     </Section>
   )
 }
-

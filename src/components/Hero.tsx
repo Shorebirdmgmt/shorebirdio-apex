@@ -75,7 +75,7 @@ export function Hero({ onBookCall }: HeroProps) {
         >
           <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-100 dark:bg-primary-950 text-primary-700 dark:text-primary-300 text-sm font-medium">
             <span className="w-2 h-2 rounded-full bg-primary-500 animate-pulse" />
-            Done-for-you agency management
+            Built for contractors & service businesses
           </span>
         </motion.div>
         
@@ -85,7 +85,7 @@ export function Hero({ onBookCall }: HeroProps) {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-slate-900 dark:text-white mb-6 tracking-tight"
         >
-          Your Agency,{' '}
+          Your Business,{' '}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-primary-600">
             Automated.
           </span>
@@ -97,8 +97,8 @@ export function Hero({ onBookCall }: HeroProps) {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-lg sm:text-xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto mb-10"
         >
-          Stop juggling 10 different tools. Get a unified, done-for-you system 
-          that runs your entire agency — clients, projects, finances, and team communication in one place.
+          Stop juggling spreadsheets, texts, and paperwork. Get a unified, done-for-you system 
+          that runs your entire operation — jobs, customers, invoicing, and crew management in one place.
         </motion.p>
         
         <motion.div
@@ -125,7 +125,7 @@ export function Hero({ onBookCall }: HeroProps) {
           className="mt-16 pt-10 border-t border-slate-200 dark:border-slate-800"
         >
           <p className="text-sm text-slate-500 dark:text-slate-400 mb-4">
-            Trusted by forward-thinking agencies
+            Trusted by contractors, trades & service businesses
           </p>
           <div className="flex items-center justify-center gap-8 opacity-50">
             <div className="h-8 w-24 bg-slate-300 dark:bg-slate-700 rounded" />
@@ -141,4 +141,3 @@ export function Hero({ onBookCall }: HeroProps) {
     </section>
   )
 }
-

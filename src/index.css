@@ -1,0 +1,193 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #72b7c7;
+  --color-primary-hover: #5a9fb0;
+  --color-primary-light: #e4f3f7;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+code, .mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #475569;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+/* Background patterns */
+.dot-pattern {
+  background-image: radial-gradient(circle, rgba(114, 183, 199, 0.15) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.dark .dot-pattern {
+  background-image: radial-gradient(circle, rgba(114, 183, 199, 0.1) 1px, transparent 1px);
+}
+
+/* Gradient mesh background */
+.gradient-mesh {
+  background: 
+    radial-gradient(at 40% 20%, rgba(114, 183, 199, 0.15) 0px, transparent 50%),
+    radial-gradient(at 80% 0%, rgba(90, 159, 173, 0.1) 0px, transparent 50%),
+    radial-gradient(at 0% 50%, rgba(133, 207, 220, 0.1) 0px, transparent 50%),
+    radial-gradient(at 80% 50%, rgba(114, 183, 199, 0.1) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, rgba(90, 159, 173, 0.1) 0px, transparent 50%);
+}
+
+.dark .gradient-mesh {
+  background: 
+    radial-gradient(at 40% 20%, rgba(114, 183, 199, 0.1) 0px, transparent 50%),
+    radial-gradient(at 80% 0%, rgba(90, 159, 173, 0.08) 0px, transparent 50%),
+    radial-gradient(at 0% 50%, rgba(133, 207, 220, 0.08) 0px, transparent 50%),
+    radial-gradient(at 80% 50%, rgba(114, 183, 199, 0.08) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, rgba(90, 159, 173, 0.08) 0px, transparent 50%);
+}
+
+/* Animated gradient orb */
+.gradient-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.5;
+  animation: float 8s ease-in-out infinite;
+}
+
+.gradient-orb-1 {
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(135deg, rgba(114, 183, 199, 0.4), rgba(133, 207, 220, 0.2));
+  top: -100px;
+  right: -100px;
+}
+
+.gradient-orb-2 {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(135deg, rgba(90, 159, 173, 0.3), rgba(114, 183, 199, 0.2));
+  bottom: -50px;
+  left: -50px;
+  animation-delay: 3s;
+}
+
+.dark .gradient-orb {
+  opacity: 0.3;
+}
+
+/* Glass morphism */
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.dark .glass {
+  background: rgba(30, 41, 59, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Glow effects */
+.glow-primary {
+  box-shadow: 0 0 20px rgba(114, 183, 199, 0.4);
+}
+
+.glow-primary-hover:hover {
+  box-shadow: 0 0 30px rgba(114, 183, 199, 0.6);
+}
+
+/* Animation delays for stagger effect */
+.animate-delay-100 { animation-delay: 100ms; }
+.animate-delay-200 { animation-delay: 200ms; }
+.animate-delay-300 { animation-delay: 300ms; }
+.animate-delay-400 { animation-delay: 400ms; }
+.animate-delay-500 { animation-delay: 500ms; }
+.animate-delay-600 { animation-delay: 600ms; }
+.animate-delay-700 { animation-delay: 700ms; }
+.animate-delay-800 { animation-delay: 800ms; }
+
+/* Reveal animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Flowing lines animation */
+@keyframes flow {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.flow-line {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: flow 3s ease-out forwards;
+}
+
+/* FAQ accordion */
+.faq-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+}
+
+.faq-content.open {
+  max-height: 500px;
+}
+
+/* Calendly styling overrides */
+.calendly-inline-widget {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
